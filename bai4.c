@@ -1,6 +1,7 @@
 #include <stdio.h>
 int main (){
 	int n; 
+	int sum=0; 
 	printf ("Nhap vao so phan tu mang: ") ;
 	scanf ("%d",&n);
 	while (n<=0){
@@ -11,12 +12,12 @@ int main (){
 	  for (int i=0;i<n;i++){
 	  	printf ("arr[%d]: ",i); 
 	  	scanf ("%d",&arr[i]); 
+	  	sum+=arr[i] ;
 	  } 
-	  int ave ; 
-	    for (int i=0;i<n;i++){
-	     ave = (arr[i]+=arr[i])/n ;
-	     } 
-	  	 printf ("Gia tri trung binh cac phan tu la: %d",ave);
+	  
+	
+	 float aver=(sum)/n ;
+	  	 printf ("Gia tri trung binh cac phan tu la: %.2f ",aver);
 
     
 	return 0; }
